@@ -77,13 +77,6 @@ True
 
 """
 
-
-"""
-    Método a Utilizar: Insertion Sort 
-    Complejidad de peor caso de Algoritmo: O(n^2) 
-    siendo n = len(lista)
-    """
-
 import random
 import doctest
 
