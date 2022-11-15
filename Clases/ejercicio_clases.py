@@ -52,10 +52,16 @@ class Circulo:
         return Circulo(self.radio * n)
 
     def area(self) -> float:
-            return pi * self.radio ** 2
+        """ 
+        Complejidad de peor caso de Algoritmo: O(1) 
+        """
+        return pi * self.radio ** 2
 
     def perimetro(self) -> float:
-            return self.radio * 2 * pi
+        """ 
+        Complejidad de peor caso de Algoritmo: O(1) 
+        """
+        return self.radio * 2 * pi
 
 
 
