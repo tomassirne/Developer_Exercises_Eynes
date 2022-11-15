@@ -2,10 +2,7 @@
 #TEST1
 >>> test = Circulo(10)
 >>> print(test)
-Medidas Circulo:
-        Radio = 10
-        Area = 314.1592653589793
-        Perimetro= 62.83185307179586
+Medidas Circulo: Radio = 10 ; Area = 314.1592653589793 ; Perimetro= 62.83185307179586
 
 #TEST2
 >>> test = Circulo(10)
@@ -18,18 +15,12 @@ Exception: Radio Inválido
 >>> test = Circulo(10)
 >>> test.radio = 2
 >>> print(test)
-Medidas Circulo:
-            Radio = 2
-            Area = 12.566370614359172
-            Perimetro= 12.566370614359172
+Medidas Circulo: Radio = 2 ; Area = 12.566370614359172 ; Perimetro= 12.566370614359172
 
 #TEST4
 >>> test = Circulo(10)
 >>> print(test * 2)
-Medidas Circulo:
-            Radio = 20
-            Area = 1256.6370614359173
-            Perimetro= 125.66370614359172
+Medidas Circulo: Radio = 20 ; Area = 1256.6370614359173 ; Perimetro= 125.66370614359172
 
 #TEST5
 >>> test = Circulo(10)
@@ -50,10 +41,7 @@ class Circulo:
         self.radio = radio
         
     def __str__(self) -> str:
-        return f"""Medidas Circulo:
-            Radio = {self.radio} 
-            Area = {self.area()}
-            Perimetro= {self.perimetro()}"""
+        return f"""Medidas Circulo: Radio = {self.radio} ; Area = {self.area()} ; Perimetro= {self.perimetro()}"""
     
     def __setattr__(self, __name: str, __value: any) -> None:
         if __name == "radio":
