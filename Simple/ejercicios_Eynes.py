@@ -34,7 +34,7 @@ True
 import random
 import doctest
 
-def genera_lista():
+def genera_lista() -> list():
     """
     Complejidad de peor caso de Algoritmo: O(1)
     """
@@ -48,7 +48,7 @@ def genera_lista():
     return lista_usuarios
 
 
-def swap(lista: list() , i : int() , j : int()):
+def swap(lista: list() , i : int() , j : int()) -> list():
     """
     Funcion que intercambia el contenido de dos posiciones de una lista
     Complejidad de peor caso de Algoritmo: O(1)
@@ -58,7 +58,7 @@ def swap(lista: list() , i : int() , j : int()):
     lista[j] = aux
     return lista
 
-def ordena_lista_decreciente(lista: list()):
+def ordena_lista_decreciente(lista: list()) -> list():
     """
     Método a Utilizar: Insertion Sort 
     Complejidad de peor caso de Algoritmo: O(n^2) 
