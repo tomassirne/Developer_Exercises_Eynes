@@ -15,9 +15,9 @@ ID de Persona más vieja:  1
 >>> len(lista) == 10
 True
 
-#TEST2
+#TEST3
 >>> lista = genera_lista()
->>> for i in range(10): 0 < lista[i]["Edad"] and lista[i]["Edad"] < 100 
+>>> for i in range(10): 0 < lista[i]["Edad"] and lista[i]["Edad"] <= 100 
 True
 True
 True
